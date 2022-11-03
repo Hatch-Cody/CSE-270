@@ -9,22 +9,19 @@
 				-moz-box-sizing: border-box;
 				-webkit-box-sizing: border-box;
 				box-sizing: border-box;
-        background-color: rgb(15, 86, 128);
+        background-color: #e0e0e0;
 			}
 
       .linkButton {
-        border: 2px solid #1e6994;
-        -webkit-border-radius: 8;
-        -moz-border-radius: 8;
-        border-radius: 8px;
-        -webkit-box-shadow: 0px 0px 10px #1e6994;
-        -moz-box-shadow: 0px 0px 10px #1e6994;
-        box-shadow: 0px 0px 10px #1e6994;
-        font-family: Arial;
-        color: #ffffff;
-        font-size: 15px;
-        background: rgb(15, 86, 128);
-        padding: 10px 20px 10px 20px;
+        color: #090909;
+        padding: 0.7em 1.7em;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 0.5em;
+        background: #e8e8e8;
+        border: 1px solid #e8e8e8;
+        transition: all .3s;
+        box-shadow: 6px 6px 25px #c5c5c5, -6px -6px 25px #ffffff;
         text-decoration: none;
         width: 35%;
         text-align: center;
@@ -33,47 +30,47 @@
       }
 
       .linkButton:hover {
-        background: #659ec2;
-        text-decoration: none;
-        transition: .1s;
+        transition: .2s;
         color: white;
+        background-color: #c9c9c9;
+        border: #c9c9c9;
       }
 
       .solveButton {
-        border: 2px solid #1e6994;
-        -webkit-border-radius: 8;
-        -moz-border-radius: 8;
-        border-radius: 8px;
-        -webkit-box-shadow: 0px 0px 10px #1e6994;
-        -moz-box-shadow: 0px 0px 10px #1e6994;
-        box-shadow: 0px 0px 10px #1e6994;
-        font-family: Arial;
-        color: #ffffff;
-        font-size: 15px;
-        background: rgb(15, 86, 128);
-        padding: 10px 20px 10px 20px;
+        color: #090909;
+        padding: 10px;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 0.5em;
+        background: #e8e8e8;
+        border: 1px solid #e8e8e8;
+        transition: all .3s;
+        box-shadow: 6px 6px 25px #c5c5c5, -6px -6px 25px #ffffff;
+        width: 120px;
+        text-align: center;
+        margin: 20px;
+        cursor: pointer;
         text-decoration: none;
       }
 
       .solveButton:hover {
-        background: #659ec2;
-        text-decoration: none;
-        transition: .1s;
         color: white;
+        background-color: #c9c9c9;
+        border: #c9c9c9;
+        transition: .1s;
       }
 
 			.wrap {
 				padding: 2em 1em;
-				width: 400px;
+				width: 600px;
 				max-width: 100%;
-				margin-left: auto;
-				margin-right: auto;
-        color: white;
+				margin: 25px auto;
+        color: rgb(0, 0, 0);
 			}
 
 			@media(min-width: 30em){
 				.wrap{
-					width: 490px;
+					width: 590px;
 				}
 				.sudoku-board input {
 					font-size: 24px;
@@ -95,8 +92,12 @@
 	<div class="wrap">
 		<h1>SudokuJS simple demo</h1>
 		<!--the only required html-->
-		<div id="sudoku" class="sudoku-board">
-		</div>
+		<div class="board-container">
+      <div class="board-background">
+        <div id="sudoku" class="sudoku-board">
+        </div>
+      </div>
+    </div>
 
 		<!--solve buttons-->
 		Solve: <button type="button" class="solveButton sudokubutton5 js-solve-step-btn">One Step</button>
