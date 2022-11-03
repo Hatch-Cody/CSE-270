@@ -4,6 +4,21 @@
 // License: MIT
 */
 
+.board-container {
+    padding: 25px 5px;
+    margin: auto;
+}
+
+.board-background {
+    margin: auto;
+    padding: 20px;
+    width: 500px;
+    height: 496px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 40px 40px 60px #bebebe, -40px -40px 60px #ffffff;
+}
+
 .sudoku-board {
     min-height: 22.75rem;
     margin-top: 2px;
